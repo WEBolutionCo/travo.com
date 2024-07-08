@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Confirm Purchase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="images/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <form class="container" id="purchaseForm">
+      <div class="navbar">
+        <div class="logoC">
+          <img src="../images/logo.png" class="logo" width="200px">
+        </div>
+        <nav class="links">
+          <ul id="MenuItems">
+            <li><a href="../index">Home</a></li>
+            <li><a href="../trips">Trips</a></li>
+            <li><a href="../working">About</a></li>
+            <li><a href="../contact">Contact</a></li>
+            <li class="last-m"><a href="../plans">Plans</a></li>
+          </ul>
+        </nav>
+        <div class="menuC">
+          <img src="../images/menu.png" class="menu-icon" id="menubtn" alt="Menu-icon" onclick="onmenu()">
+        </div>
+      </div>
+      <section class="check-input1-sec">
+        <div class="small-container">
+          <h1 class="chhe1">User Information</h1>
+          <div class="inp-grp">
+            <label for="name">Username:</label>
+            <input type="text" placeholder="Username" name="name" class="info-in" id="name">
+          </div>
+          <div class="inp-grp">
+            <label for="email">Email<span class="red">*</span>:</label>
+            <input type="text" placeholder="Email" name="email" class="info-in" id="name" required>
+          </div>
+          <div class="inp-grp">
+            <label for="phone">Phone<span class="red">*</span>:</label>
+            <input type="text" placeholder="Phone No." name="phone" class="info-in" id="name" required>
+          </div>
+        </div>
+      </section>
+      <section class="time-sec">
+        <div class="small-container">
+          <div class="row">
+            <div class="kcol-1" onclick="threeDayChange()">
+              <img src="../images/3days.png" alt="3 Days picture" class="day-img">
+              <h2 class="khe-1">3 Days</h2>
+              <p class="day-des">This option books
+              your trip as a <span class="grad">3 day</span> trip. means
+              there would be 3 days and 3 nights
+              to stay at tour destination.
+              </p>
+              <div class="selectC">
+                <div class="select" id="3d"></div>
+              </div>
+            </div>
+            <div class="kcol-1" onclick="sevenDayChange()">
+              <img src="../images/7days.png" alt="7 Days picture" class="day-img">
+              <h2 class="khe-1">7 Days</h2>
+              <p class="day-des">This option books
+              your trip for a <span class="grad">entire week</span>. if you 
+              are going to foreign for the first time,
+              we recommend it.
+              </p>
+              <div class="selectC">
+                <div class="select" id="7d"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="payment-sec">
+        <div class="small-container">
+          <h1 class="khe2">Payment Methods</h1>
+          <div class="row">
+            <div class="kcol-3" onclick="paychange()">
+              <img src="../images/paypal.jpg" alt="paypal logo" class="pay-ic">
+              <h2 class="pay-name">Paypal</h2>
+              <p class="paydes">
+                <span class="grad">Paypal</span> is a world renowned payment
+                method. while paying less charge,
+                you could pay with a wide variety
+                of currencies. Its definetly a good
+                choice if you are planning to pay
+                with currencies other than US dollars.
+              </p>
+              <div class="selectC">
+                <div class="select" id="pay-grn"></div>
+              </div>
+            </div>
+            <div class="kcol-3" onclick="maschange()">
+              <img src="../images/master.jpg" alt="mastercard logo" class="pay-ic">
+              <h2 class="pay-name">Mastercard</h2>
+              <p class="paydes">
+                <span class="grad">Mastercard</span> allows you to pay with
+                any currencies. It might have a littlw
+                higher charge than other options. But
+                having the nicity to be able to pay
+                with any currency can't be found on
+                the other options. It's defenitly worth
+                a try.
+              </p>
+              <div class="selectC">
+                <div class="select" id="mas-grn"></div>
+              </div>
+            </div>
+            <div class="kcol-3" onclick="patchange()">
+              <img src="../images/cod.jpg" alt="Pay on flight logo" class="pay-ic nbr">
+              <h2 class="pay-name">Pay on Trip</h2>
+              <p class="paydes">
+                You could also choose to 
+                <span class="grad">Pay on Trip</span>.
+                When you arrive to your destination,
+                our tour guides will collect the fare
+                of your trip. Don't worry we'll be in
+                touch with you. So you will know the 
+                fare before you arrive.
+              </p>
+              <div class="selectC">
+                <div class="select" id="pat-grn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="check-input2-sec" id="inpSec">
+        <div class="small-container">
+          <h1 class="chhe1">Airport Address</h1>
+          <div class="inp-grp">
+            <label for="name">Country<span class="red">*</span>:</label>
+            <input type="text" placeholder="Country" name="name" class="info-in" id="req1" required="required">
+          </div>
+          <div class="inp-grp">
+            <label for="email">State:</label>
+            <input type="text" placeholder="State" name="email" class="info-in" id="name">
+          </div>
+          <div class="inp-grp">
+            <label for="phone">City<span class="red">*</span>:</label>
+            <input type="text" placeholder="City" name="phone" class="info-in" id="req2" required="required">
+          </div>
+          <div class="inp-grp">
+            <label for="email">Street:</label>
+            <input type="text" placeholder="Street" name="email" class="info-in" id="name">
+          </div>
+          <div class="inp-grp">
+            <label for="phone">Airport<span class="red">*</span>:</label>
+            <input type="text" placeholder="Airport" name="phone" class="info-in" id="req3" required="required">
+          </div>
+        </div>
+      </section>
+      <section class="choose-sec">
+        <div class="small-container">
+          <div class="chooseC">
+            <h2 class="khe3">Choose a plan!</h2>
+            <p class="chodes">
+              Choose a plan before you book a trip
+              our plans have great offers and are
+              meant to save your costs if you are
+              thinking to stick with Travo for a
+              long term. Save on costs today and
+              join the family of Travo.
+            </p>
+            <button class="cta">Choose plan &rarr;</button>
+            <button class="cta2">I have a plan</button>
+          </div>
+        </div>
+      </section>
+      <section class="caution-sec">
+        <div class="small-container">
+          <div class="cautionC">
+            <p class="cautions">
+            <i class="fa-solid fa-align-justify pa"></i> Double check the information you have
+            provided. Because if you provide wrong
+            informatin on the upper sections, Travo
+            would not be responsible for this.
+            </p>
+            <p class="cautions">
+            <i class="fa-solid fa-align-justify pa"></i> You would be provided with a digital
+            ticket if you pay online. Thats why
+            make sure you have the ticket with you
+            when you arrive at Travo trip site. Or
+            else you can not get in.
+            </p>
+            <p class="cautions">
+            <i class="fa-solid fa-align-justify pa"></i> Do not share the ticket with anyone.
+            The tickets have their unique id within
+            them. If the ticket is matched to any
+            other ticket, your trip will be cancelled.
+            </p>
+            <p class="cautions">
+            <i class="fa-solid fa-align-justify pa"></i> When you finish the payments on the trip 
+            sight, you will be provided with a physical
+            ticket. You have to present this ticket to
+            the guide of your tour to redeem the trip
+            </p>
+            <p class="cautions">
+            <i class="fa-solid fa-align-justify pa"></i> By continuing on getting a trip and pressing
+            the submit form button, you agree to our 
+            <a href="../working" class="grad">terms of conditions</a>
+            and <a href="../working" class="grad">privacy policies</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sub-sec">
+      <div class="small-container">
+        <div class="subC">
+          <input type="submit" class="cta sub" id="submitBtn">
+        </div>
+      </div>
+      </section>
+    </form>
+    <footer class="footer">
+      <div class="small-container">
+        <div class="rowf">
+          <div class="footer-1">
+            <img src="../images/logo.png" alt="Travo-logo" class="logo">
+            <p class="footer-des textW">
+              Travo dreams to provide its customers 
+              first-class experience on the trips
+              going all over the world. So people
+              could enjoy travel at its fullest.
+            </p>
+          </div>
+          <div class="footer-2">
+            <h3 class="download textW">Download our mobile app</h3>
+            <p class="footer-des textg">
+              Download Travo's official mobile app. Now it's
+              Available on Android and IOS.
+            </p>
+            <img src="../images/playstore.jpg" alt="playstore" onclick="window.location.href='https://play.google.com';">
+            <img src="../images/appstore.jpg" alt="appstore" onclick="window.location.href='https://www.appstore.com';">
+          </div>
+          <div class="footer-3">
+            <h4 class="download textW">Useful links</h4>
+            <ul>
+              <li class="foot-links textW"><a href="../contact">Contact</a></li>
+              <li class="foot-links textW"><a href="../working">About</a></li>
+              <li class="foot-links textW"><a href="../trips">Trips</a></li>
+              <li class="foot-links textW"><a href="../working.html">Blog post</a></li>
+            </ul>
+          </div>
+          <div class="footer-3">
+            <h4 class="download textW">Follow us on</h4>
+            <ul>
+              <li class="foot-links textW"><a href="https://www.facebook.com">Facebook</a></li>
+              <li class="foot-links textW"><a href="https://www.youtube.com">Youtube</a></li>
+              <li class="foot-links textW"><a href="https://www.x.com">Twitter</a></li>
+              <li class="foot-links textW"><a href="https://www.instagram.com">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="rowf">
+          <p class="copyright">Copyright 2024 © WEBolutionCo - All rights reserved</p>
+          <div class="braf">
+            <i class="fa-brands fa-facebook textg bra" onclick="window.location.href='https://www.facebook.com';"></i>
+            <i class="fa-brands fa-instagram textg bra" onclick="window.location.href='https://www.instagram.com';"></i>
+            <i class="fa-brands fa-twitter textg bra" onclick="window.location.href='https://www.x.com';"></i>
+            <i class="fa-brands fa-youtube textg bra" onclick="window.location.href='https://www.youtube.com';"></i>
+            <i class="fa-brands fa-github textg bra" onclick="window.location.href='https://www.github.com';"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="trips.js"></script>
+    <script src="detail Js/check.js"></script>
+  </body>
+</html>

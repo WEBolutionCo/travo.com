@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book a Trip!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="images/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logoC">
+          <img src="../images/logo.png" class="logo" width="200px">
+        </div>
+        <nav class="links">
+          <ul id="MenuItems">
+            <li><a href="../index">Home</a></li>
+            <li><a href="../trips">Trips</a></li>
+            <li><a href="../working">About</a></li>
+            <li><a href="../contact">Contact</a></li>
+            <li class="last-m"><a href="../plans">Plans</a></li>
+          </ul>
+        </nav>
+        <div class="menuC">
+          <img src="../images/menu.png" class="menu-icon" id="menubtn" alt="Menu-icon" onclick="onmenu()">
+        </div>
+      </div>
+      <section class="trip-sec">
+        <div class="small-container">
+          <div class="row">
+            <div class="tcol-1">
+              <img src="../images/south-asia.png" alt="south-asia-scenery" class="trip-pic" id="mainPic">
+              <div class="lil-pics">
+                <img src="../images/south-asia.png" alt="south-asia-scenery-1" class="lil-pics1" onclick="changePic1()" id="pic1">
+                <img src="../images/south-asia2.jpg" alt="south-asia-scenery-2" class="lil-pics2" onclick="changePic2()" id="pic2">
+                <img src="../images/south-asia3.jpg" alt="south-asia-scenery-3" class="lil-pics3" onclick="changePic3()" id="pic3">
+              </div>
+            </div>
+            <div class="tcol-2">
+              <p class="address">Trips / South Asia</p>
+              <h1 class="the1">South Asia</h1>
+              <input type="password" pattern="[0-9]*" inputmode="numeric" maxlength="6" class="pincode">
+              <p class="inp-des">
+                *Enter your pincode to redeem the 
+                premium features
+              </p>
+              <button class="book cta" onclick="window.location.href='checkout';">Book now &rarr;</button>
+              <h2 class="the2">Continent Detail <i class="fa-solid fa-indent picon grad"></i></h2>
+              <p class="cont-des">
+                South Asia, home to India, Pakistan, Bangladesh, Nepal, Sri Lanka, Bhutan, and the Maldives, is a region rich in history, culture, and natural beauty. It boasts the majestic Himalayas, vibrant cities like Delhi and Karachi, and serene beaches in the Maldives. Known for its diverse traditions, cuisines, and festivals, South Asia offers a unique blend of ancient heritage and modern dynamism.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category-sec">
+        <h1 class="the3 textB">Top Continents</h1>
+        <div class="small-container">
+          <div class="trow">
+            <div class="tcol3">
+              <div class="col-3-er col-3-pic" onclick="window.location.href='europe';">
+                <div class="col-3-bl">
+                  <h2 class="the-col-3 textW">Europe</h2>
+                  <p class="col-3-des textW">
+                    132k visits &#9900; 13780 reviews
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tcol3">
+              <div class="col-3-nm col-3-pic" onclick="window.location.href='north-america';">
+                <div class="col-3-bl">
+                  <h2 class="the-col-3 textW">North America</h2>
+                  <p class="col-3-des textW">
+                    127k visits &#9900; 10379 reviews
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tcol3">
+              <div class="col-3-ea col-3-pic" onclick="window.location.href='east-asia';">
+                <div class="col-3-bl">
+                  <h2 class="the-col-3 textW">East Asia</h2>
+                  <p class="col-3-des textW">
+                    108k visits &#9900; 8432 reviews
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="small-container">
+        <div class="rowf">
+          <div class="footer-1">
+            <img src="../images/logo.png" alt="Travo-logo" class="logo">
+            <p class="footer-des textW">
+              Travo dreams to provide its customers 
+              first-class experience on the trips
+              going all over the world. So people
+              could enjoy travel at its fullest.
+            </p>
+          </div>
+          <div class="footer-2">
+            <h3 class="download textW">Download our mobile app</h3>
+            <p class="footer-des textg">
+              Download Travo's official mobile app. Now it's
+              Available on Android and IOS.
+            </p>
+            <img src="../images/playstore.jpg" alt="playstore" onclick="window.location.href='https://play.google.com';">
+            <img src="../images/appstore.jpg" alt="appstore" onclick="window.location.href='https://www.appstore.com';">
+          </div>
+          <div class="footer-3">
+            <h4 class="download textW">Useful links</h4>
+            <ul>
+              <li class="foot-links textW"><a href="../contact">Contact</a></li>
+              <li class="foot-links textW"><a href="../working">About</a></li>
+              <li class="foot-links textW"><a href="../trips">Trips</a></li>
+              <li class="foot-links textW"><a href="../working">Blog post</a></li>
+            </ul>
+          </div>
+          <div class="footer-3">
+            <h4 class="download textW">Follow us on</h4>
+            <ul>
+              <li class="foot-links textW"><a href="https://www.facebook.com">Facebook</a></li>
+              <li class="foot-links textW"><a href="https://www.youtube.com">Youtube</a></li>
+              <li class="foot-links textW"><a href="https://www.x.com">Twitter</a></li>
+              <li class="foot-links textW"><a href="https://www.instagram.com">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="rowf">
+          <p class="copyright">Copyright 2024 © WEBolutionCo - All rights reserved</p>
+          <div class="braf">
+            <i class="fa-brands fa-facebook textg bra" onclick="window.location.href='https://www.facebook.com';"></i>
+            <i class="fa-brands fa-instagram textg bra" onclick="window.location.href='https://www.instagram.com';"></i>
+            <i class="fa-brands fa-twitter textg bra" onclick="window.location.href='https://www.x.com';"></i>
+            <i class="fa-brands fa-youtube textg bra" onclick="window.location.href='https://www.youtube.com';"></i>
+            <i class="fa-brands fa-github textg bra" onclick="window.location.href='https://www.github.com';"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="trips.js"></script>
+    <script src="detail Js/sa.js"></script>
+  </body>
+</html>
