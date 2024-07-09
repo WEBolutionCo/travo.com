@@ -385,7 +385,7 @@ nav li a {
 }
 
 .col-3-jap {
-  background-image: url(images/no-images/japan8k.jpg);
+  background-image: url(images/japan.jpg);
 }
 
 .col-3-mex {
@@ -1085,6 +1085,12 @@ ul {
 .nbr {
   border-radius: 20%;
   border: solid 2px #333;
+}
+
+.choose-sec {
+  max-height: 400px;
+  overflow: hidden;
+  transition: max-height 0.8s;
 }
 
 .chooseC {
