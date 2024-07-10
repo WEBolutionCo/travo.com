@@ -2,8 +2,6 @@
 <html>
   <head>
     <title>Confirm Purchase</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="images/x-icon" href="../images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -36,11 +34,11 @@
           </div>
           <div class="inp-grp">
             <label for="email">Email<span class="red">*</span>:</label>
-            <input type="text" placeholder="Email" name="email" class="info-in" id="name" required>
+            <input type="email" placeholder="Email *" name="email" class="info-in" id="name" required>
           </div>
           <div class="inp-grp">
             <label for="phone">Phone<span class="red">*</span>:</label>
-            <input type="text" placeholder="Phone No." name="phone" class="info-in" id="name" required>
+            <input type="number" placeholder="Phone No.*" pattern="[0-9]*" inputmode="numeric" name="phone" class="info-in" id="name" required>
           </div>
         </div>
       </section>
@@ -133,7 +131,7 @@
           <h1 class="chhe1">Airport Address</h1>
           <div class="inp-grp">
             <label for="name">Country<span class="red">*</span>:</label>
-            <input type="text" placeholder="Country" name="name" class="info-in" id="req1" required="required">
+            <input type="text" placeholder="Country *" name="name" class="info-in" id="req1" required="required">
           </div>
           <div class="inp-grp">
             <label for="email">State:</label>
@@ -141,7 +139,7 @@
           </div>
           <div class="inp-grp">
             <label for="phone">City<span class="red">*</span>:</label>
-            <input type="text" placeholder="City" name="phone" class="info-in" id="req2" required="required">
+            <input type="text" placeholder="City *" name="phone" class="info-in" id="req2" required="required">
           </div>
           <div class="inp-grp">
             <label for="email">Street:</label>
@@ -149,11 +147,11 @@
           </div>
           <div class="inp-grp">
             <label for="phone">Airport<span class="red">*</span>:</label>
-            <input type="text" placeholder="Airport" name="phone" class="info-in" id="req3" required="required">
+            <input type="text" placeholder="Airport *" name="phone" class="info-in" id="req3" required="required">
           </div>
         </div>
       </section>
-      <section class="choose-sec">
+      <section class="choose-sec" id="plan-sec">
         <div class="small-container">
           <div class="chooseC">
             <h2 class="khe3">Choose a plan!</h2>
@@ -165,8 +163,8 @@
               long term. Save on costs today and
               join the family of Travo.
             </p>
-            <button class="cta">Choose plan &rarr;</button>
-            <button class="cta2">I have a plan</button>
+            <button type="button" class="cta" onclick="window.location.href='../plans';">Choose plan &rarr;</button>
+            <button type="button" class="cta2" onclick="vanish()">I have a plan</button>
           </div>
         </div>
       </section>
