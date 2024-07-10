@@ -14,7 +14,7 @@ document.getElementById('submitBtn').onclick = function(event) {
 
     if (allFilled) {
         // All required inputs are filled, proceed to the specified page
-        window.location.href = 'thanks.html';
+        window.location.href = 'thanks';
     } else {
         alert('Please fill all required fields.');
     }
@@ -27,6 +27,7 @@ const paytri = document.getElementById("pat-grn");
 const req1 = document.getElementById("req1");
 const req2 = document.getElementById("req2");
 const req3 = document.getElementById("req3");
+const planSec = document.getElementById("plan-sec");
 
 const threeDay = document.getElementById("3d");
 const sevenDay = document.getElementById("7d");
@@ -37,9 +38,9 @@ const inpsec = document.getElementById("inpSec");
 paypal.style.backgroundColor = "#00ee00";
 master.style.backgroundColor = "#ededed";
 paytri.style.backgroundColor = "#ededed";
-    req1.required = "";
-    req2.required = "";
-    req3.required = "";
+req1.required = "";
+req2.required = "";
+req3.required = "";
 inpsec.style.maxHeight = "0px";
 
 threeDay.style.backgroundColor = "#00ee00";
@@ -75,6 +76,10 @@ const patchange = () => {
     req3.required = "required";
     inpsec.style.maxHeight = "300px";
 };
+
+const vanish = () => {
+    planSec.style.maxHeight = "0px";
+}
 
 const threeDayChange = () => {
     threeDay.style.backgroundColor = "#00ee00";
