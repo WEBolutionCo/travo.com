@@ -133,11 +133,16 @@ body{
 
 .container {
   width: 100%;
-  padding: 0 auto;
   margin: 0 auto;
 }
 
 .small-container {
+  max-width: 1080px;
+  padding: 0 25px;
+  margin: 2px; auto;
+}
+
+.smalls-container {
   max-width: 1080px;
   padding: 0 25px;
 }
@@ -1200,8 +1205,16 @@ ul {
     margin-left: 0;
   }
   
-  .container, .small-container {
+  .small-container {
     padding: 0 15px;
+  }
+  
+  .smalls-container {
+    padding: 0;
+  }
+  
+  .container {
+    padding: 0 2px;
   }
   
   .row {
@@ -1270,6 +1283,10 @@ ul {
     padding: 10px 10px 10px 0;
   }
   
+  .ctaC {
+    margin: 0 10px;
+  }
+  
   .cta2 {
     margin-top: 15px;
     margin-left: 0;
@@ -1289,6 +1306,12 @@ ul {
     flex-basis: 100%;
     margin-bottom: 35px;
     text-align: center;
+    margin-left: 0;
+  }
+  
+  .footer-des {
+    text-align: center;
+    margin: 5px auto;
   }
   
   .footer-3 {
