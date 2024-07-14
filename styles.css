@@ -132,12 +132,10 @@ body{
 }
 
 .container {
-  width: 100vw;
-  margin: 0 auto;
-}
-
-section, footer {
-  margin: 2px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .small-container {
@@ -510,10 +508,14 @@ nav li a {
 .col-5 {
   flex-basis: 30%;
   margin: auto;
-  background: #ededed;
+  background: #eee;
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0 0 8px #bbb;
+}
+
+.col-5:hover, .col-5:active {
+  background-color: #cdcdcd;
 }
 
 .quoter-pic {
@@ -672,6 +674,11 @@ ul {
   color: #666;
   font-size: 12px;
   font-weight: 400;
+  white-space: nowrap;
+}
+
+.braf {
+  white-space: nowrap;
 }
 
 .bra {
