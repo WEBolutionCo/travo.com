@@ -132,14 +132,17 @@ body{
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   margin: 0 auto;
+}
+
+section, footer {
+  margin: 2px auto;
 }
 
 .small-container {
   max-width: 1080px;
   padding: 0 25px;
-  margin: 2px; auto;
 }
 
 .smalls-container {
