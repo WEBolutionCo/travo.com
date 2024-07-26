@@ -12,3 +12,7 @@ const onmenu = () => {
         menubtn.src = "images/menu.png";
     };
 };
+
+const ntAvail = () => {
+    alert("Sorry, but we haven't to added this feature yet. Please try again later.");
+}

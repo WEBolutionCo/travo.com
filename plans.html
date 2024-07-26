@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Travo: Choose a Plan!</title>
     <meta charset="UTF-8">
@@ -10,6 +10,8 @@
   </head>
   <body>
     <div class="container">
+    <div class="semi-container">
+      <div class="small-container">
       <div class="navbar">
         <div class="logoC">
           <img src="images/logo.png" class="logo" width="200px">
@@ -27,6 +29,7 @@
           <img src="images/menu.png" class="menu-icon" id="menubtn" alt="Menu-icon" onclick="onmenu()">
         </div>
       </div>
+      </div>
       <section class="plans-sec">
         <div class="small-container">
           <h1 class="phe1">Available Plans</h1>
@@ -43,13 +46,13 @@
                   <i class="fa-solid fa-check grad marks"></i><p class="feades">Booking open anytime</p>
                 </div>
                 <div class="feaC">
-                  <i class="fa-solid fa-xmark marks"></i><p class="feades">Expert care for free</p>
+                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Unlimited Trips per Year</p>
+                </div>
+                <div class="feaC">
+                  <i class="fa-solid fa-xmark marks"></i><p class="feades">Expert care all time</p>
                 </div>
                 <div class="feaC">
                   <i class="fa-solid fa-xmark marks"></i><p class="feades">Custom Location</p>
-                </div>
-                <div class="feaC">
-                  <i class="fa-solid fa-xmark marks"></i><p class="feades">Limited Trips per Year</p>
                 </div>
               </div>
               <button class="ctap">Current plan</button>
@@ -57,7 +60,7 @@
             <div class="pcol-3">
               <p class="time">Monthly</p>
               <h2 class="price">24.99$ / Month</h2>
-              <p class="aprice grad">Most Picked</p>
+              <p class="mstpicked grad">Most Picked</p>
               <div class="features">
                 <div class="feaC">
                   <i class="fa-solid fa-check grad marks"></i><p class="feades">Access to all trips</p>
@@ -66,21 +69,21 @@
                   <i class="fa-solid fa-check grad marks"></i><p class="feades">Booking open anytime</p>
                 </div>
                 <div class="feaC">
-                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Expert care for free</p>
+                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Unlimited Trips per Year</p>
+                </div>
+                <div class="feaC">
+                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Expert care all time</p>
                 </div>
                 <div class="feaC">
                   <i class="fa-solid fa-check grad marks"></i><p class="feades">Custom Location</p>
                 </div>
-                <div class="feaC">
-                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Unlimited Trips per Year</p>
-                </div>
               </div>
-              <button class="cta">Choose plan &rarr;</button>
+              <button class="cta" onclick="ntAvail()">Choose plan &rarr;</button>
             </div>
             <div class="pcol-3">
               <p class="time">Annually</p>
               <h2 class="price">259.99$</h2>
-              <p class="aprice">21.99$ / Month</p>
+              <p class="aprice">21.99$± / Month</p>
               <div class="features">
                 <div class="feaC">
                   <i class="fa-solid fa-check grad marks"></i><p class="feades">Access to all trips</p>
@@ -89,21 +92,20 @@
                   <i class="fa-solid fa-check grad marks"></i><p class="feades">Booking open anytime</p>
                 </div>
                 <div class="feaC">
-                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Expert care for free</p>
+                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Unlimited Trips per Year</p>
+                </div>
+                <div class="feaC">
+                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Expert care all time</p>
                 </div>
                 <div class="feaC">
                   <i class="fa-solid fa-check grad marks"></i><p class="feades">Custom Location</p>
                 </div>
-                <div class="feaC">
-                  <i class="fa-solid fa-check grad marks"></i><p class="feades">Unlimited Trips per Year</p>
-                </div>
               </div>
-              <button class="cta">Choose plan &rarr;</button>
+              <button class="cta" onclick="ntAvail()">Choose plan &rarr;</button>
             </div>
           </div>
         </div>
       </section>
-    </div>
     <footer class="footer">
       <div class="small-container">
         <div class="rowf">
@@ -157,6 +159,8 @@
         </div>
       </div>
     </footer>
+    </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

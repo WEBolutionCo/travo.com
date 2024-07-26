@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Travo: Contact us</title>
     <meta charset="UTF-8">
@@ -10,6 +10,8 @@
   </head>
   <body>
     <div class="container">
+    <div class="semi-container">
+      <div class="small-container">
       <div class="navbar">
         <div class="logoC">
           <img src="images/logo.png" class="logo" width="200px">
@@ -26,6 +28,7 @@
         <div class="menuC">
           <img src="images/menu.png" class="menu-icon" id="menubtn" alt="Menu-icon" onclick="onmenu()">
         </div>
+      </div>
       </div>
       <section class="cont-sec1">
         <div class="small-container">
@@ -49,21 +52,21 @@
         <div class="small-container">
           <h1 class="che2">Ways to Contact us</h1>
           <div class="row">
-            <div class="ccol-3">
+            <div class="ccol-3" onclick="window.location.href='working';">
               <img src="images/whatsapp.png" alt="Whatsapp icon" class="other">
               <p class="met-des">You can use <span class="grad">Whatsapp</span> to contact us directly. Our WhatsApp number is 01911707671</p>
             </div>
-            <div class="ccol-3">
+            <div class="ccol-3" onclick="window.location.href='https://www.gmail.com';">
               <img src="images/gmail.png" alt="Gmail icon" class="nther">
               <p class="met-des">Most of the users prefer <span class="grad">Gmail</span>. Our email address is located at travoInfo@gmail.com</p>
             </div>
-            <div class="ccol-3">
+            <div class="ccol-3" onclick="window.location.href='https://www.facebook.com';">
               <img src="images/facebook.png" alt="Facebook icon" class="other">
               <p class="met-des">We have a <span class="grad">Facebook</span> group. You can share your memories on our Facebook page.</p>
             </div>
           </div>
           <div class="row">
-            <div class="ccol-3">
+            <div class="ccol-3" onclick="window.location.href='https://www.linkedin.com';">
               <img src="images/linkedin.png" alt="LinkedIn icon" class="other">
               <p class="met-des">You can use <span class="grad">LinkedIn</span> to contact us. Connect with us on our LinkedIn profile.</p>
             </div>
@@ -71,7 +74,7 @@
               <img src="images/phone.png" alt="Phone icon" class="nther">
               <p class="met-des">You can also <span class="grad">Call</span> us directly to our office. Our phone land phone number is 01674000244.</p>
             </div>
-            <div class="ccol-3">
+            <div class="ccol-3" onclick="window.location.href='working';">
               <img src="images/form.png" alt="Contact Form icon" class="other">
               <p class="met-des">You can use our website <span class="grad">contact form</span> to reach us. Click in this box to get writing now!</p>
             </div>
@@ -111,11 +114,12 @@
               this fluid interface you are 
               experiencing today!
             </p>
-            <button class="cta">Contact Now &rarr;</button>
+            <button class="cta" onclick="window.location.href='working';">Contact Now &rarr;</button>
           </div>
         </div>
       </section>
     </div>
+    <div class="semi-container">
     <footer class="footer">
       <div class="small-container">
         <div class="rowf">
@@ -169,6 +173,8 @@
         </div>
       </div>
     </footer>
+    </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
