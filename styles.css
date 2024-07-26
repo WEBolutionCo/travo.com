@@ -629,7 +629,6 @@ nav li a {
   padding: 0px;
   padding-top: 20px;
   background: #000;
-  border-top: solid 2px #fff;
   display: flex;
   justify-content: center;
 }
@@ -790,32 +789,25 @@ ul {
   margin: 15px 0;
 }
 
-.workin-sec {
-  width: 100vw;
-  aspect-ratio: 16/7.25;
-  margin: 0px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .workinC {
+  width: 95vw;
+  aspect-ratio: 16/7.5;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .whe1 {
+  text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .wor-des {
-  font-size: 12px;
-  text-align: center;
   max-width: 470px;
+  text-align: center;
+  font-size: 13px;
 }
 
 .phe1 {
@@ -915,7 +907,7 @@ ul {
 }
 
 .lil-pics1, .lil-pics2, .lil-pics3 {
-  width: 85px;
+  width: 100px;
   margin: 0 5px;
 }
 
@@ -1216,6 +1208,11 @@ ul {
   .last-m {
     margin-right: 50px;
   }
+  
+  .worNav {
+    margin: 0 15px;
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1383,7 +1380,7 @@ ul {
   }
   
   .footer {
-    width: 100.5vw;
+    width: 100vw;
   }
   
   .footer-1, .footer-2 {
@@ -1441,9 +1438,13 @@ ul {
     padding: 0px;
   }
   
-  .workin-sec {
-    height: 79vh;
+  .workinC {
+    height: 71vh;
     padding: 0px;
+  }
+  
+  .wor-des {
+    margin: 0 15px;
   }
   
   .phe1 {
@@ -1452,7 +1453,8 @@ ul {
   
   .pcol-3 {
     flex-basis: 90%;
-    margin: 25px 30px;
+    margin: 25px 0px;
+    min-width: 300px;
   }
   
   .trow {
