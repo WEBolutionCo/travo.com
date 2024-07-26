@@ -6,7 +6,7 @@ const pic3 = document.getElementById("pic3");
 pic1.style.border = "solid 2px #f96e06";
 
 const changePic1 = () => {
-    mainPic.src = "../images/north-merca.jpg";
+    mainPic.src = "../images/north-merca.png";
     pic1.style.border = "solid 2px #f96e06";
     pic2.style.border = "none";
     pic3.style.border = "none";

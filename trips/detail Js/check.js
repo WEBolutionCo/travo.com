@@ -1,6 +1,4 @@
-// Function to check if all required fields are filled
 document.getElementById('submitBtn').onclick = function(event) {
-    event.preventDefault(); // Prevent the default form submission
 
     let form = document.getElementById('purchaseForm');
     let inputs = form.querySelectorAll('input[required]');
@@ -13,14 +11,12 @@ document.getElementById('submitBtn').onclick = function(event) {
     });
 
     if (allFilled) {
-        // All required inputs are filled, proceed to the specified page
         window.location.href = 'thanks';
     } else {
-        alert('Please fill all required fields.');
+        alert('Please fill all required fields to Proceed');
     }
 };
 
-// Variables for payment options and sections
 const paypal = document.getElementById("pay-grn");
 const master = document.getElementById("mas-grn");
 const paytri = document.getElementById("pat-grn");
@@ -34,7 +30,6 @@ const sevenDay = document.getElementById("7d");
 
 const inpsec = document.getElementById("inpSec");
 
-// Initial styles
 paypal.style.backgroundColor = "#00ee00";
 master.style.backgroundColor = "#ededed";
 paytri.style.backgroundColor = "#ededed";
@@ -46,7 +41,6 @@ inpsec.style.maxHeight = "0px";
 threeDay.style.backgroundColor = "#00ee00";
 sevenDay.style.backgroundColor = "#ededed";
 
-// Functions to handle changes
 const paychange = () => {
     paypal.style.backgroundColor = "#00ee00";
     master.style.backgroundColor = "#ededed";
@@ -74,7 +68,7 @@ const patchange = () => {
     req1.required = "required";
     req2.required = "required";
     req3.required = "required";
-    inpsec.style.maxHeight = "300px";
+    inpsec.style.maxHeight = "350px";
 };
 
 const vanish = () => {
