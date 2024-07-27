@@ -176,7 +176,7 @@ p {
 }
 
 .bg {
-  background: #ededed;
+  background: #eee;
 }
 
 /* */
@@ -485,7 +485,7 @@ nav li a {
 }
 
 .benefits {
-  background-color: #ededed;
+  background-color: #efefef;
   display: flex;
   align-content: center;
   border-radius: 15px;
@@ -822,8 +822,8 @@ ul {
 .pcol-3 {
   flex-basis: 30%;
   background-color: #ededed;
-  min-width: 300px;
-  margin: 40px auto;
+  width: 300px;
+  margin: 40px 5px;
   padding: 20px; 
   border-radius: 20px;
   box-shadow: 0 0 5px #ccc;
@@ -1207,7 +1207,7 @@ ul {
   .menu-icon{
     display: inline-block;
     cursor: pointer;
-    transition: src 0.8s;
+    padding: 2px;
   }
   
   .last-m {
@@ -1215,7 +1215,12 @@ ul {
   }
   
   .worNav {
-    margin: 0 15px;
+    margin: 0 5px;
+    width: auto;
+  }
+  
+  .workNav {
+    margin: 0 25px;
     width: auto;
   }
 }
@@ -1342,7 +1347,7 @@ ul {
   
   .benefits {
     margin-top: 20px;
-    padding: 10px 10px 10px 0;
+    padding: 3px 10px 3px 0;
   }
 
   .icons {
