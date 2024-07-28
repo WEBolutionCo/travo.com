@@ -77,19 +77,6 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('Poppins/Poppins-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins';
     src: url('Poppins/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
 }
@@ -98,6 +85,19 @@
     font-family: 'Poppins';
     src: url('Poppins/Poppins-LightItalic.ttf') format('truetype');
     font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
     font-style: italic;
 }
 
@@ -113,8 +113,6 @@
     font-weight: 100;
     font-style: italic;
 }
-
-
 
 /* utility classes */
 
@@ -738,7 +736,6 @@ ul {
 
 .cont-des1 {
   font-size: 12px;
-  max-width: 370px;
   text-align: justify;
 }
 
