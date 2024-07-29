@@ -663,16 +663,16 @@ nav li a {
 }
 
 .footer-3 {
-  flex-basis: 11.11%;
-  margin: auto;
-}
+  flex-basis: 11.5%;
+  margin-left: 15px;
+} 
 
 ul {
   list-style-type: none;
 }
 
 .foot-links {
-  margin: 5px;
+  margin: 5px 5px 5px 0;
   font-size: 13px;
 }
 
@@ -1339,14 +1339,6 @@ ul {
     min-width: 300px;
   }
   
-  .col-3-pic:hover {
-    transform: none;
-  }
-  
-  .col-3-pic:active {
-    transform: translateY(-5px);
-  }
-  
   .col-2 {
     padding: 0;
   }
@@ -1438,6 +1430,8 @@ ul {
   .footer-3 {
     flex-basis: 50%;
     text-align: center;
+    margin-left: 0;
+    margin: auto;
   }
   
   .rowf {
@@ -1523,7 +1517,7 @@ ul {
   }
 
   .lil-pics1, .lil-pics2, .lil-pics3 {
-    width: 95px;
+    width: 100px;
     margin: 0 0;
   }
   
